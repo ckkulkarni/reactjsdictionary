@@ -1,0 +1,11 @@
+ba7a2f3316582985f4fc203b9e3fc41b
+/* istanbul ignore next */
+"use strict";
+
+var getNative = require('./_getNative'),
+  root = require('./_root');
+
+/* Built-in method references that are verified to be native. */
+var Set = getNative(root, 'Set');
+module.exports = Set;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJnZXROYXRpdmUiLCJyZXF1aXJlIiwicm9vdCIsIlNldCIsIm1vZHVsZSIsImV4cG9ydHMiXSwic291cmNlcyI6WyJfU2V0LmpzIl0sInNvdXJjZXNDb250ZW50IjpbInZhciBnZXROYXRpdmUgPSByZXF1aXJlKCcuL19nZXROYXRpdmUnKSxcbiAgICByb290ID0gcmVxdWlyZSgnLi9fcm9vdCcpO1xuXG4vKiBCdWlsdC1pbiBtZXRob2QgcmVmZXJlbmNlcyB0aGF0IGFyZSB2ZXJpZmllZCB0byBiZSBuYXRpdmUuICovXG52YXIgU2V0ID0gZ2V0TmF0aXZlKHJvb3QsICdTZXQnKTtcblxubW9kdWxlLmV4cG9ydHMgPSBTZXQ7XG4iXSwibWFwcGluZ3MiOiI7OztBQUFBLElBQUlBLFNBQVMsR0FBR0MsT0FBTyxDQUFDLGNBQWMsQ0FBQztFQUNuQ0MsSUFBSSxHQUFHRCxPQUFPLENBQUMsU0FBUyxDQUFDOztBQUU3QjtBQUNBLElBQUlFLEdBQUcsR0FBR0gsU0FBUyxDQUFDRSxJQUFJLEVBQUUsS0FBSyxDQUFDO0FBRWhDRSxNQUFNLENBQUNDLE9BQU8sR0FBR0YsR0FBRyJ9

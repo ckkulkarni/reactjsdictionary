@@ -1,0 +1,76 @@
+5c6df277896db9866e62b948e6c3733f
+/* istanbul ignore next */
+"use strict";
+
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+exports.createDispatchHook = createDispatchHook;
+exports.useDispatch = void 0;
+var
+/* istanbul ignore next */
+_Context = require("../components/Context");
+var
+/* istanbul ignore next */
+_useStore = require("./useStore");
+/**
+ * Hook factory, which creates a `useDispatch` hook bound to a given context.
+ *
+ * @param {React.Context} [context=ReactReduxContext] Context passed to your `<Provider>`.
+ * @returns {Function} A `useDispatch` hook bound to the specified context.
+ */
+
+function createDispatchHook(context =
+/* istanbul ignore next */
+_Context.
+/* istanbul ignore next */
+ReactReduxContext) {
+  const useStore =
+  // @ts-ignore
+  context ===
+  /* istanbul ignore next */
+  _Context.
+  /* istanbul ignore next */
+  ReactReduxContext ?
+  /* istanbul ignore next */
+  _useStore.
+  /* istanbul ignore next */
+  useStore :
+  /* istanbul ignore next */
+  (0,
+  /* istanbul ignore next */
+  _useStore.
+  /* istanbul ignore next */
+  createStoreHook)(context);
+  return function useDispatch() {
+    const store = useStore(); // @ts-ignore
+
+    return store.dispatch;
+  };
+}
+/**
+ * A hook to access the redux `dispatch` function.
+ *
+ * @returns {any|function} redux store's `dispatch` function
+ *
+ * @example
+ *
+ * import React, { useCallback } from 'react'
+ * import { useDispatch } from 'react-redux'
+ *
+ * export const CounterComponent = ({ value }) => {
+ *   const dispatch = useDispatch()
+ *   const increaseCounter = useCallback(() => dispatch({ type: 'increase-counter' }), [])
+ *   return (
+ *     <div>
+ *       <span>{value}</span>
+ *       <button onClick={increaseCounter}>Increase counter</button>
+ *     </div>
+ *   )
+ * }
+ */
+
+const useDispatch = /*#__PURE__*/createDispatchHook();
+/* istanbul ignore next */
+exports.useDispatch = useDispatch;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJfQ29udGV4dCIsInJlcXVpcmUiLCJfdXNlU3RvcmUiLCJjcmVhdGVEaXNwYXRjaEhvb2siLCJjb250ZXh0IiwiUmVhY3RSZWR1eENvbnRleHQiLCJ1c2VTdG9yZSIsInVzZURlZmF1bHRTdG9yZSIsImNyZWF0ZVN0b3JlSG9vayIsInVzZURpc3BhdGNoIiwic3RvcmUiLCJkaXNwYXRjaCIsImV4cG9ydHMiXSwic291cmNlcyI6WyJ1c2VEaXNwYXRjaC5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyJpbXBvcnQgeyBSZWFjdFJlZHV4Q29udGV4dCB9IGZyb20gJy4uL2NvbXBvbmVudHMvQ29udGV4dCc7XG5pbXBvcnQgeyB1c2VTdG9yZSBhcyB1c2VEZWZhdWx0U3RvcmUsIGNyZWF0ZVN0b3JlSG9vayB9IGZyb20gJy4vdXNlU3RvcmUnO1xuLyoqXHJcbiAqIEhvb2sgZmFjdG9yeSwgd2hpY2ggY3JlYXRlcyBhIGB1c2VEaXNwYXRjaGAgaG9vayBib3VuZCB0byBhIGdpdmVuIGNvbnRleHQuXHJcbiAqXHJcbiAqIEBwYXJhbSB7UmVhY3QuQ29udGV4dH0gW2NvbnRleHQ9UmVhY3RSZWR1eENvbnRleHRdIENvbnRleHQgcGFzc2VkIHRvIHlvdXIgYDxQcm92aWRlcj5gLlxyXG4gKiBAcmV0dXJucyB7RnVuY3Rpb259IEEgYHVzZURpc3BhdGNoYCBob29rIGJvdW5kIHRvIHRoZSBzcGVjaWZpZWQgY29udGV4dC5cclxuICovXG5cbmV4cG9ydCBmdW5jdGlvbiBjcmVhdGVEaXNwYXRjaEhvb2soY29udGV4dCA9IFJlYWN0UmVkdXhDb250ZXh0KSB7XG4gIGNvbnN0IHVzZVN0b3JlID0gLy8gQHRzLWlnbm9yZVxuICBjb250ZXh0ID09PSBSZWFjdFJlZHV4Q29udGV4dCA/IHVzZURlZmF1bHRTdG9yZSA6IGNyZWF0ZVN0b3JlSG9vayhjb250ZXh0KTtcbiAgcmV0dXJuIGZ1bmN0aW9uIHVzZURpc3BhdGNoKCkge1xuICAgIGNvbnN0IHN0b3JlID0gdXNlU3RvcmUoKTsgLy8gQHRzLWlnbm9yZVxuXG4gICAgcmV0dXJuIHN0b3JlLmRpc3BhdGNoO1xuICB9O1xufVxuLyoqXHJcbiAqIEEgaG9vayB0byBhY2Nlc3MgdGhlIHJlZHV4IGBkaXNwYXRjaGAgZnVuY3Rpb24uXHJcbiAqXHJcbiAqIEByZXR1cm5zIHthbnl8ZnVuY3Rpb259IHJlZHV4IHN0b3JlJ3MgYGRpc3BhdGNoYCBmdW5jdGlvblxyXG4gKlxyXG4gKiBAZXhhbXBsZVxyXG4gKlxyXG4gKiBpbXBvcnQgUmVhY3QsIHsgdXNlQ2FsbGJhY2sgfSBmcm9tICdyZWFjdCdcclxuICogaW1wb3J0IHsgdXNlRGlzcGF0Y2ggfSBmcm9tICdyZWFjdC1yZWR1eCdcclxuICpcclxuICogZXhwb3J0IGNvbnN0IENvdW50ZXJDb21wb25lbnQgPSAoeyB2YWx1ZSB9KSA9PiB7XHJcbiAqICAgY29uc3QgZGlzcGF0Y2ggPSB1c2VEaXNwYXRjaCgpXHJcbiAqICAgY29uc3QgaW5jcmVhc2VDb3VudGVyID0gdXNlQ2FsbGJhY2soKCkgPT4gZGlzcGF0Y2goeyB0eXBlOiAnaW5jcmVhc2UtY291bnRlcicgfSksIFtdKVxyXG4gKiAgIHJldHVybiAoXHJcbiAqICAgICA8ZGl2PlxyXG4gKiAgICAgICA8c3Bhbj57dmFsdWV9PC9zcGFuPlxyXG4gKiAgICAgICA8YnV0dG9uIG9uQ2xpY2s9e2luY3JlYXNlQ291bnRlcn0+SW5jcmVhc2UgY291bnRlcjwvYnV0dG9uPlxyXG4gKiAgICAgPC9kaXY+XHJcbiAqICAgKVxyXG4gKiB9XHJcbiAqL1xuXG5leHBvcnQgY29uc3QgdXNlRGlzcGF0Y2ggPSAvKiNfX1BVUkVfXyovY3JlYXRlRGlzcGF0Y2hIb29rKCk7Il0sIm1hcHBpbmdzIjoiOzs7Ozs7OztBQUFBO0FBQUE7QUFBQUEsUUFBQSxHQUFBQyxPQUFBO0FBQ0E7QUFBQTtBQUFBQyxTQUFBLEdBQUFELE9BQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7O0FBRU8sU0FBU0Usa0JBQWtCQSxDQUFDQyxPQUFPO0FBQUdDO0FBQUFBO0FBQUFBO0FBQUFBLGlCQUFpQixFQUFFO0VBQzlELE1BQU1DLFFBQVE7RUFBRztFQUNqQkYsT0FBTztFQUFLQztFQUFBQTtFQUFBQTtFQUFBQSxpQkFBaUI7RUFBR0U7RUFBQUE7RUFBQUE7RUFBQUEsUUFBZTtFQUFHO0VBQUE7RUFBQUM7RUFBQUE7RUFBQUE7RUFBQUEsZUFBZSxFQUFDSixPQUFPLENBQUM7RUFDMUUsT0FBTyxTQUFTSyxXQUFXQSxDQUFBLEVBQUc7SUFDNUIsTUFBTUMsS0FBSyxHQUFHSixRQUFRLEVBQUUsQ0FBQyxDQUFDOztJQUUxQixPQUFPSSxLQUFLLENBQUNDLFFBQVE7RUFDdkIsQ0FBQztBQUNIO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVPLE1BQU1GLFdBQVcsR0FBRyxhQUFhTixrQkFBa0IsRUFBRTtBQUFDO0FBQUFTLE9BQUEsQ0FBQUgsV0FBQSxHQUFBQSxXQUFBIn0=

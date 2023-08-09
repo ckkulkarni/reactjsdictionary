@@ -1,0 +1,7 @@
+3f134c6d27f242a0b6d5dac7e1a34f66
+// minimal library entry point.
+
+"use strict";
+
+module.exports = require("./src/index-minimal");
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwicmVxdWlyZSJdLCJzb3VyY2VzIjpbIm1pbmltYWwuanMiXSwic291cmNlc0NvbnRlbnQiOlsiLy8gbWluaW1hbCBsaWJyYXJ5IGVudHJ5IHBvaW50LlxuXG5cInVzZSBzdHJpY3RcIjtcbm1vZHVsZS5leHBvcnRzID0gcmVxdWlyZShcIi4vc3JjL2luZGV4LW1pbmltYWxcIik7XG4iXSwibWFwcGluZ3MiOiJBQUFBOztBQUVBLFlBQVk7O0FBQ1pBLE1BQU0sQ0FBQ0MsT0FBTyxHQUFHQyxPQUFPLENBQUMscUJBQXFCLENBQUMifQ==

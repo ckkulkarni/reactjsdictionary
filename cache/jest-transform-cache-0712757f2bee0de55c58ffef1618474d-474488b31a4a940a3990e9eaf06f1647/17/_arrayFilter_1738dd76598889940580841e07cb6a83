@@ -1,0 +1,28 @@
+6237dacc298dd7b1ee1e5d3f4a249e8e
+/* istanbul ignore next */
+"use strict";
+
+/**
+ * A specialized version of `_.filter` for arrays without support for
+ * iteratee shorthands.
+ *
+ * @private
+ * @param {Array} [array] The array to iterate over.
+ * @param {Function} predicate The function invoked per iteration.
+ * @returns {Array} Returns the new filtered array.
+ */
+function arrayFilter(array, predicate) {
+  var index = -1,
+    length = array == null ? 0 : array.length,
+    resIndex = 0,
+    result = [];
+  while (++index < length) {
+    var value = array[index];
+    if (predicate(value, index, array)) {
+      result[resIndex++] = value;
+    }
+  }
+  return result;
+}
+module.exports = arrayFilter;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJhcnJheUZpbHRlciIsImFycmF5IiwicHJlZGljYXRlIiwiaW5kZXgiLCJsZW5ndGgiLCJyZXNJbmRleCIsInJlc3VsdCIsInZhbHVlIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIl9hcnJheUZpbHRlci5qcyJdLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEEgc3BlY2lhbGl6ZWQgdmVyc2lvbiBvZiBgXy5maWx0ZXJgIGZvciBhcnJheXMgd2l0aG91dCBzdXBwb3J0IGZvclxuICogaXRlcmF0ZWUgc2hvcnRoYW5kcy5cbiAqXG4gKiBAcHJpdmF0ZVxuICogQHBhcmFtIHtBcnJheX0gW2FycmF5XSBUaGUgYXJyYXkgdG8gaXRlcmF0ZSBvdmVyLlxuICogQHBhcmFtIHtGdW5jdGlvbn0gcHJlZGljYXRlIFRoZSBmdW5jdGlvbiBpbnZva2VkIHBlciBpdGVyYXRpb24uXG4gKiBAcmV0dXJucyB7QXJyYXl9IFJldHVybnMgdGhlIG5ldyBmaWx0ZXJlZCBhcnJheS5cbiAqL1xuZnVuY3Rpb24gYXJyYXlGaWx0ZXIoYXJyYXksIHByZWRpY2F0ZSkge1xuICB2YXIgaW5kZXggPSAtMSxcbiAgICAgIGxlbmd0aCA9IGFycmF5ID09IG51bGwgPyAwIDogYXJyYXkubGVuZ3RoLFxuICAgICAgcmVzSW5kZXggPSAwLFxuICAgICAgcmVzdWx0ID0gW107XG5cbiAgd2hpbGUgKCsraW5kZXggPCBsZW5ndGgpIHtcbiAgICB2YXIgdmFsdWUgPSBhcnJheVtpbmRleF07XG4gICAgaWYgKHByZWRpY2F0ZSh2YWx1ZSwgaW5kZXgsIGFycmF5KSkge1xuICAgICAgcmVzdWx0W3Jlc0luZGV4KytdID0gdmFsdWU7XG4gICAgfVxuICB9XG4gIHJldHVybiByZXN1bHQ7XG59XG5cbm1vZHVsZS5leHBvcnRzID0gYXJyYXlGaWx0ZXI7XG4iXSwibWFwcGluZ3MiOiI7OztBQUFBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLFNBQVNBLFdBQVdBLENBQUNDLEtBQUssRUFBRUMsU0FBUyxFQUFFO0VBQ3JDLElBQUlDLEtBQUssR0FBRyxDQUFDLENBQUM7SUFDVkMsTUFBTSxHQUFHSCxLQUFLLElBQUksSUFBSSxHQUFHLENBQUMsR0FBR0EsS0FBSyxDQUFDRyxNQUFNO0lBQ3pDQyxRQUFRLEdBQUcsQ0FBQztJQUNaQyxNQUFNLEdBQUcsRUFBRTtFQUVmLE9BQU8sRUFBRUgsS0FBSyxHQUFHQyxNQUFNLEVBQUU7SUFDdkIsSUFBSUcsS0FBSyxHQUFHTixLQUFLLENBQUNFLEtBQUssQ0FBQztJQUN4QixJQUFJRCxTQUFTLENBQUNLLEtBQUssRUFBRUosS0FBSyxFQUFFRixLQUFLLENBQUMsRUFBRTtNQUNsQ0ssTUFBTSxDQUFDRCxRQUFRLEVBQUUsQ0FBQyxHQUFHRSxLQUFLO0lBQzVCO0VBQ0Y7RUFDQSxPQUFPRCxNQUFNO0FBQ2Y7QUFFQUUsTUFBTSxDQUFDQyxPQUFPLEdBQUdULFdBQVcifQ==

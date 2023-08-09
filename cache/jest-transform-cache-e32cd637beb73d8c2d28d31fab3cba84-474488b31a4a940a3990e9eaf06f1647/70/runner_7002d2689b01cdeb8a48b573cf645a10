@@ -1,0 +1,12 @@
+237715e617dd89f222c46c79a5002d40
+/**
+ * Copyright (c) Meta Platforms, Inc. and affiliates.
+ *
+ * This source code is licensed under the MIT license found in the
+ * LICENSE file in the root directory of this source tree.
+ */
+
+// Allow people to use `jest-circus/runner` as a runner.
+const runner = require('./build/legacy-code-todo-rewrite/jestAdapter').default;
+module.exports = runner;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJydW5uZXIiLCJyZXF1aXJlIiwiZGVmYXVsdCIsIm1vZHVsZSIsImV4cG9ydHMiXSwic291cmNlcyI6WyJydW5uZXIuanMiXSwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBDb3B5cmlnaHQgKGMpIE1ldGEgUGxhdGZvcm1zLCBJbmMuIGFuZCBhZmZpbGlhdGVzLlxuICpcbiAqIFRoaXMgc291cmNlIGNvZGUgaXMgbGljZW5zZWQgdW5kZXIgdGhlIE1JVCBsaWNlbnNlIGZvdW5kIGluIHRoZVxuICogTElDRU5TRSBmaWxlIGluIHRoZSByb290IGRpcmVjdG9yeSBvZiB0aGlzIHNvdXJjZSB0cmVlLlxuICovXG5cbi8vIEFsbG93IHBlb3BsZSB0byB1c2UgYGplc3QtY2lyY3VzL3J1bm5lcmAgYXMgYSBydW5uZXIuXG5jb25zdCBydW5uZXIgPSByZXF1aXJlKCcuL2J1aWxkL2xlZ2FjeS1jb2RlLXRvZG8tcmV3cml0ZS9qZXN0QWRhcHRlcicpLmRlZmF1bHQ7XG5tb2R1bGUuZXhwb3J0cyA9IHJ1bm5lcjtcbiJdLCJtYXBwaW5ncyI6IkFBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBOztBQUVBO0FBQ0EsTUFBTUEsTUFBTSxHQUFHQyxPQUFPLENBQUMsOENBQThDLENBQUMsQ0FBQ0MsT0FBTztBQUM5RUMsTUFBTSxDQUFDQyxPQUFPLEdBQUdKLE1BQU0ifQ==

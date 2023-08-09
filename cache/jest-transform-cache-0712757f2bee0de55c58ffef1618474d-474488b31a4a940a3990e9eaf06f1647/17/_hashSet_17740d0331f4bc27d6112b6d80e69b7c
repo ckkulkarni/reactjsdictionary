@@ -1,0 +1,27 @@
+37ac8f0ecf80a0c3082f51dde1224a44
+/* istanbul ignore next */
+"use strict";
+
+var nativeCreate = require('./_nativeCreate');
+
+/** Used to stand-in for `undefined` hash values. */
+var HASH_UNDEFINED = '__lodash_hash_undefined__';
+
+/**
+ * Sets the hash `key` to `value`.
+ *
+ * @private
+ * @name set
+ * @memberOf Hash
+ * @param {string} key The key of the value to set.
+ * @param {*} value The value to set.
+ * @returns {Object} Returns the hash instance.
+ */
+function hashSet(key, value) {
+  var data = this.__data__;
+  this.size += this.has(key) ? 0 : 1;
+  data[key] = nativeCreate && value === undefined ? HASH_UNDEFINED : value;
+  return this;
+}
+module.exports = hashSet;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJuYXRpdmVDcmVhdGUiLCJyZXF1aXJlIiwiSEFTSF9VTkRFRklORUQiLCJoYXNoU2V0Iiwia2V5IiwidmFsdWUiLCJkYXRhIiwiX19kYXRhX18iLCJzaXplIiwiaGFzIiwidW5kZWZpbmVkIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIl9oYXNoU2V0LmpzIl0sInNvdXJjZXNDb250ZW50IjpbInZhciBuYXRpdmVDcmVhdGUgPSByZXF1aXJlKCcuL19uYXRpdmVDcmVhdGUnKTtcblxuLyoqIFVzZWQgdG8gc3RhbmQtaW4gZm9yIGB1bmRlZmluZWRgIGhhc2ggdmFsdWVzLiAqL1xudmFyIEhBU0hfVU5ERUZJTkVEID0gJ19fbG9kYXNoX2hhc2hfdW5kZWZpbmVkX18nO1xuXG4vKipcbiAqIFNldHMgdGhlIGhhc2ggYGtleWAgdG8gYHZhbHVlYC5cbiAqXG4gKiBAcHJpdmF0ZVxuICogQG5hbWUgc2V0XG4gKiBAbWVtYmVyT2YgSGFzaFxuICogQHBhcmFtIHtzdHJpbmd9IGtleSBUaGUga2V5IG9mIHRoZSB2YWx1ZSB0byBzZXQuXG4gKiBAcGFyYW0geyp9IHZhbHVlIFRoZSB2YWx1ZSB0byBzZXQuXG4gKiBAcmV0dXJucyB7T2JqZWN0fSBSZXR1cm5zIHRoZSBoYXNoIGluc3RhbmNlLlxuICovXG5mdW5jdGlvbiBoYXNoU2V0KGtleSwgdmFsdWUpIHtcbiAgdmFyIGRhdGEgPSB0aGlzLl9fZGF0YV9fO1xuICB0aGlzLnNpemUgKz0gdGhpcy5oYXMoa2V5KSA/IDAgOiAxO1xuICBkYXRhW2tleV0gPSAobmF0aXZlQ3JlYXRlICYmIHZhbHVlID09PSB1bmRlZmluZWQpID8gSEFTSF9VTkRFRklORUQgOiB2YWx1ZTtcbiAgcmV0dXJuIHRoaXM7XG59XG5cbm1vZHVsZS5leHBvcnRzID0gaGFzaFNldDtcbiJdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsSUFBSUEsWUFBWSxHQUFHQyxPQUFPLENBQUMsaUJBQWlCLENBQUM7O0FBRTdDO0FBQ0EsSUFBSUMsY0FBYyxHQUFHLDJCQUEyQjs7QUFFaEQ7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxTQUFTQyxPQUFPQSxDQUFDQyxHQUFHLEVBQUVDLEtBQUssRUFBRTtFQUMzQixJQUFJQyxJQUFJLEdBQUcsSUFBSSxDQUFDQyxRQUFRO0VBQ3hCLElBQUksQ0FBQ0MsSUFBSSxJQUFJLElBQUksQ0FBQ0MsR0FBRyxDQUFDTCxHQUFHLENBQUMsR0FBRyxDQUFDLEdBQUcsQ0FBQztFQUNsQ0UsSUFBSSxDQUFDRixHQUFHLENBQUMsR0FBSUosWUFBWSxJQUFJSyxLQUFLLEtBQUtLLFNBQVMsR0FBSVIsY0FBYyxHQUFHRyxLQUFLO0VBQzFFLE9BQU8sSUFBSTtBQUNiO0FBRUFNLE1BQU0sQ0FBQ0MsT0FBTyxHQUFHVCxPQUFPIn0=

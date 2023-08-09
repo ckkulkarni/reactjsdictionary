@@ -1,0 +1,18 @@
+90bd3d2c0b663d4bcf2b3b5c2b095c6c
+"use strict";
+
+var __importDefault =
+/* istanbul ignore next */
+void 0 &&
+/* istanbul ignore next */
+(void 0).__importDefault || function (mod) {
+  return mod && mod.__esModule ? mod : {
+    "default": mod
+  };
+};
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var Gherkin_1 = __importDefault(require("./Gherkin"));
+exports.default = Gherkin_1.default;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJHaGVya2luXzEiLCJfX2ltcG9ydERlZmF1bHQiLCJyZXF1aXJlIiwiZXhwb3J0cyIsImRlZmF1bHQiXSwic291cmNlcyI6WyIuLi8uLi9zcmMvaW5kZXgudHMiXSwic291cmNlc0NvbnRlbnQiOltudWxsXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7O0FBQUEsSUFBQUEsU0FBQSxHQUFBQyxlQUFBLENBQUFDLE9BQUE7QUFHQUMsT0FBQSxDQUFBQyxPQUFBLEdBQWVKLFNBQUEsQ0FBQUksT0FBTyJ9

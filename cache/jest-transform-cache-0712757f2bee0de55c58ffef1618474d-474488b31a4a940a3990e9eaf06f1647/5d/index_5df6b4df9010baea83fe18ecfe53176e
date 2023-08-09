@@ -1,0 +1,9 @@
+0014722a54628084d1423035bf4bc296
+/* istanbul ignore next */
+"use strict";
+
+var toString = {}.toString;
+module.exports = Array.isArray || function (arr) {
+  return toString.call(arr) == '[object Array]';
+};
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJ0b1N0cmluZyIsIm1vZHVsZSIsImV4cG9ydHMiLCJBcnJheSIsImlzQXJyYXkiLCJhcnIiLCJjYWxsIl0sInNvdXJjZXMiOlsiaW5kZXguanMiXSwic291cmNlc0NvbnRlbnQiOlsidmFyIHRvU3RyaW5nID0ge30udG9TdHJpbmc7XG5cbm1vZHVsZS5leHBvcnRzID0gQXJyYXkuaXNBcnJheSB8fCBmdW5jdGlvbiAoYXJyKSB7XG4gIHJldHVybiB0b1N0cmluZy5jYWxsKGFycikgPT0gJ1tvYmplY3QgQXJyYXldJztcbn07XG4iXSwibWFwcGluZ3MiOiI7OztBQUFBLElBQUlBLFFBQVEsR0FBRyxDQUFDLENBQUMsQ0FBQ0EsUUFBUTtBQUUxQkMsTUFBTSxDQUFDQyxPQUFPLEdBQUdDLEtBQUssQ0FBQ0MsT0FBTyxJQUFJLFVBQVVDLEdBQUcsRUFBRTtFQUMvQyxPQUFPTCxRQUFRLENBQUNNLElBQUksQ0FBQ0QsR0FBRyxDQUFDLElBQUksZ0JBQWdCO0FBQy9DLENBQUMifQ==

@@ -1,0 +1,10 @@
+9011a6c218aa896a984c6f7cec7e8252
+/* istanbul ignore next */
+"use strict";
+
+var root = require('./_root');
+
+/** Built-in value references. */
+var Symbol = root.Symbol;
+module.exports = Symbol;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJyb290IiwicmVxdWlyZSIsIlN5bWJvbCIsIm1vZHVsZSIsImV4cG9ydHMiXSwic291cmNlcyI6WyJfU3ltYm9sLmpzIl0sInNvdXJjZXNDb250ZW50IjpbInZhciByb290ID0gcmVxdWlyZSgnLi9fcm9vdCcpO1xuXG4vKiogQnVpbHQtaW4gdmFsdWUgcmVmZXJlbmNlcy4gKi9cbnZhciBTeW1ib2wgPSByb290LlN5bWJvbDtcblxubW9kdWxlLmV4cG9ydHMgPSBTeW1ib2w7XG4iXSwibWFwcGluZ3MiOiI7OztBQUFBLElBQUlBLElBQUksR0FBR0MsT0FBTyxDQUFDLFNBQVMsQ0FBQzs7QUFFN0I7QUFDQSxJQUFJQyxNQUFNLEdBQUdGLElBQUksQ0FBQ0UsTUFBTTtBQUV4QkMsTUFBTSxDQUFDQyxPQUFPLEdBQUdGLE1BQU0ifQ==

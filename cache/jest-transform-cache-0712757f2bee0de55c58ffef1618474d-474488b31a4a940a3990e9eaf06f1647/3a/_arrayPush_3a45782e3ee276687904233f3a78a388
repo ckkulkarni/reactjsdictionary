@@ -1,0 +1,23 @@
+ebebbe3ab42cc50c986bc393ffd22c70
+/* istanbul ignore next */
+"use strict";
+
+/**
+ * Appends the elements of `values` to `array`.
+ *
+ * @private
+ * @param {Array} array The array to modify.
+ * @param {Array} values The values to append.
+ * @returns {Array} Returns `array`.
+ */
+function arrayPush(array, values) {
+  var index = -1,
+    length = values.length,
+    offset = array.length;
+  while (++index < length) {
+    array[offset + index] = values[index];
+  }
+  return array;
+}
+module.exports = arrayPush;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJhcnJheVB1c2giLCJhcnJheSIsInZhbHVlcyIsImluZGV4IiwibGVuZ3RoIiwib2Zmc2V0IiwibW9kdWxlIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIl9hcnJheVB1c2guanMiXSwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBBcHBlbmRzIHRoZSBlbGVtZW50cyBvZiBgdmFsdWVzYCB0byBgYXJyYXlgLlxuICpcbiAqIEBwcml2YXRlXG4gKiBAcGFyYW0ge0FycmF5fSBhcnJheSBUaGUgYXJyYXkgdG8gbW9kaWZ5LlxuICogQHBhcmFtIHtBcnJheX0gdmFsdWVzIFRoZSB2YWx1ZXMgdG8gYXBwZW5kLlxuICogQHJldHVybnMge0FycmF5fSBSZXR1cm5zIGBhcnJheWAuXG4gKi9cbmZ1bmN0aW9uIGFycmF5UHVzaChhcnJheSwgdmFsdWVzKSB7XG4gIHZhciBpbmRleCA9IC0xLFxuICAgICAgbGVuZ3RoID0gdmFsdWVzLmxlbmd0aCxcbiAgICAgIG9mZnNldCA9IGFycmF5Lmxlbmd0aDtcblxuICB3aGlsZSAoKytpbmRleCA8IGxlbmd0aCkge1xuICAgIGFycmF5W29mZnNldCArIGluZGV4XSA9IHZhbHVlc1tpbmRleF07XG4gIH1cbiAgcmV0dXJuIGFycmF5O1xufVxuXG5tb2R1bGUuZXhwb3J0cyA9IGFycmF5UHVzaDtcbiJdLCJtYXBwaW5ncyI6Ijs7O0FBQUE7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBLFNBQVNBLFNBQVNBLENBQUNDLEtBQUssRUFBRUMsTUFBTSxFQUFFO0VBQ2hDLElBQUlDLEtBQUssR0FBRyxDQUFDLENBQUM7SUFDVkMsTUFBTSxHQUFHRixNQUFNLENBQUNFLE1BQU07SUFDdEJDLE1BQU0sR0FBR0osS0FBSyxDQUFDRyxNQUFNO0VBRXpCLE9BQU8sRUFBRUQsS0FBSyxHQUFHQyxNQUFNLEVBQUU7SUFDdkJILEtBQUssQ0FBQ0ksTUFBTSxHQUFHRixLQUFLLENBQUMsR0FBR0QsTUFBTSxDQUFDQyxLQUFLLENBQUM7RUFDdkM7RUFDQSxPQUFPRixLQUFLO0FBQ2Q7QUFFQUssTUFBTSxDQUFDQyxPQUFPLEdBQUdQLFNBQVMifQ==

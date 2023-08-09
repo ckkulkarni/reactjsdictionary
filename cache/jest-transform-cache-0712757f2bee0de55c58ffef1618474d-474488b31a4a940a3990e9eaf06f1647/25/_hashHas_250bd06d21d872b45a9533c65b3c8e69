@@ -1,0 +1,27 @@
+eacb6b02e03363782a4d7dd198d7b8c4
+/* istanbul ignore next */
+"use strict";
+
+var nativeCreate = require('./_nativeCreate');
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * Checks if a hash value for `key` exists.
+ *
+ * @private
+ * @name has
+ * @memberOf Hash
+ * @param {string} key The key of the entry to check.
+ * @returns {boolean} Returns `true` if an entry for `key` exists, else `false`.
+ */
+function hashHas(key) {
+  var data = this.__data__;
+  return nativeCreate ? data[key] !== undefined : hasOwnProperty.call(data, key);
+}
+module.exports = hashHas;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJuYXRpdmVDcmVhdGUiLCJyZXF1aXJlIiwib2JqZWN0UHJvdG8iLCJPYmplY3QiLCJwcm90b3R5cGUiLCJoYXNPd25Qcm9wZXJ0eSIsImhhc2hIYXMiLCJrZXkiLCJkYXRhIiwiX19kYXRhX18iLCJ1bmRlZmluZWQiLCJjYWxsIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIl9oYXNoSGFzLmpzIl0sInNvdXJjZXNDb250ZW50IjpbInZhciBuYXRpdmVDcmVhdGUgPSByZXF1aXJlKCcuL19uYXRpdmVDcmVhdGUnKTtcblxuLyoqIFVzZWQgZm9yIGJ1aWx0LWluIG1ldGhvZCByZWZlcmVuY2VzLiAqL1xudmFyIG9iamVjdFByb3RvID0gT2JqZWN0LnByb3RvdHlwZTtcblxuLyoqIFVzZWQgdG8gY2hlY2sgb2JqZWN0cyBmb3Igb3duIHByb3BlcnRpZXMuICovXG52YXIgaGFzT3duUHJvcGVydHkgPSBvYmplY3RQcm90by5oYXNPd25Qcm9wZXJ0eTtcblxuLyoqXG4gKiBDaGVja3MgaWYgYSBoYXNoIHZhbHVlIGZvciBga2V5YCBleGlzdHMuXG4gKlxuICogQHByaXZhdGVcbiAqIEBuYW1lIGhhc1xuICogQG1lbWJlck9mIEhhc2hcbiAqIEBwYXJhbSB7c3RyaW5nfSBrZXkgVGhlIGtleSBvZiB0aGUgZW50cnkgdG8gY2hlY2suXG4gKiBAcmV0dXJucyB7Ym9vbGVhbn0gUmV0dXJucyBgdHJ1ZWAgaWYgYW4gZW50cnkgZm9yIGBrZXlgIGV4aXN0cywgZWxzZSBgZmFsc2VgLlxuICovXG5mdW5jdGlvbiBoYXNoSGFzKGtleSkge1xuICB2YXIgZGF0YSA9IHRoaXMuX19kYXRhX187XG4gIHJldHVybiBuYXRpdmVDcmVhdGUgPyAoZGF0YVtrZXldICE9PSB1bmRlZmluZWQpIDogaGFzT3duUHJvcGVydHkuY2FsbChkYXRhLCBrZXkpO1xufVxuXG5tb2R1bGUuZXhwb3J0cyA9IGhhc2hIYXM7XG4iXSwibWFwcGluZ3MiOiI7OztBQUFBLElBQUlBLFlBQVksR0FBR0MsT0FBTyxDQUFDLGlCQUFpQixDQUFDOztBQUU3QztBQUNBLElBQUlDLFdBQVcsR0FBR0MsTUFBTSxDQUFDQyxTQUFTOztBQUVsQztBQUNBLElBQUlDLGNBQWMsR0FBR0gsV0FBVyxDQUFDRyxjQUFjOztBQUUvQztBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQSxTQUFTQyxPQUFPQSxDQUFDQyxHQUFHLEVBQUU7RUFDcEIsSUFBSUMsSUFBSSxHQUFHLElBQUksQ0FBQ0MsUUFBUTtFQUN4QixPQUFPVCxZQUFZLEdBQUlRLElBQUksQ0FBQ0QsR0FBRyxDQUFDLEtBQUtHLFNBQVMsR0FBSUwsY0FBYyxDQUFDTSxJQUFJLENBQUNILElBQUksRUFBRUQsR0FBRyxDQUFDO0FBQ2xGO0FBRUFLLE1BQU0sQ0FBQ0MsT0FBTyxHQUFHUCxPQUFPIn0=

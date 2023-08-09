@@ -1,0 +1,158 @@
+#light .homeContainer {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#dark .homeContainer {
+  max-width: 800px;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(40, 40, 40);
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 5px rgba(0,0,0,.1);
+  border-radius: 4px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.word {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.definition {
+  font-size: 18px;
+  line-height: 1.4;
+  margin-bottom: 20px;
+}
+.homeForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.selectField {
+  margin-right: 10px;
+}
+
+.selectButton {
+  background-color: #4caf50;
+  color: white;
+  margin-left: 10px;
+}
+
+.selectButton:hover {
+  background-color: #357a38;
+}
+
+
+#dark .detailsContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+#light .detailsContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  
+}
+#dark .details {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  height: fit-content
+
+}
+#light .details {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: fit-content
+}
+
+.wordHeading {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.phonetics {
+  margin-bottom: 10px;
+}
+
+.phonetics p {
+  margin-bottom: 5px;
+}
+
+.audio {
+  margin-left: 10px;
+}
+
+.partOfSpeech {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.defineWExample {
+  margin-bottom: 20px;
+}
+
+.definitionParagraph {
+  margin-bottom: 5px;
+}
+
+.example {
+  margin-bottom: 5px;
+}
+
+.synonyms {
+  font-style: italic;
+}
+
+#dark {
+  background-color: rgb(80, 80, 80);
+}
+#light {
+  background-color: #f5f5f5;
+}
+.wordAndDefinition:hover{
+  cursor: pointer;
+  border: 0.2px solid rgb(42, 42, 190);
+  padding: 8px
+}
+.homeContainer em {
+  font-style: italic;
+  color: gray;
+  margin-bottom: 10px;
+}
+.wordAndDefinition{
+  padding: 8px
+}
+#dark #wordInput,#previousWords,#selectPrevious{
+  color: white
+}
+#light #previousWords{
+  color: black
+}

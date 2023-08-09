@@ -1,0 +1,6 @@
+02839b7ef12888c1c8fd906e28e57f1d
+/* istanbul ignore next */
+"use strict";
+
+module.exports = require('util').inspect;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJtb2R1bGUiLCJleHBvcnRzIiwicmVxdWlyZSIsImluc3BlY3QiXSwic291cmNlcyI6WyJ1dGlsLmluc3BlY3QuanMiXSwic291cmNlc0NvbnRlbnQiOlsibW9kdWxlLmV4cG9ydHMgPSByZXF1aXJlKCd1dGlsJykuaW5zcGVjdDtcbiJdLCJtYXBwaW5ncyI6Ijs7O0FBQUFBLE1BQU0sQ0FBQ0MsT0FBTyxHQUFHQyxPQUFPLENBQUMsTUFBTSxDQUFDLENBQUNDLE9BQU8ifQ==

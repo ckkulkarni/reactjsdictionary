@@ -1,0 +1,10 @@
+3edad0e0b50c6c8d22d12a3a83dc0ed9
+/* istanbul ignore next */
+"use strict";
+
+var root = require('./_root');
+
+/** Used to detect overreaching core-js shims. */
+var coreJsData = root['__core-js_shared__'];
+module.exports = coreJsData;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJyb290IiwicmVxdWlyZSIsImNvcmVKc0RhdGEiLCJtb2R1bGUiLCJleHBvcnRzIl0sInNvdXJjZXMiOlsiX2NvcmVKc0RhdGEuanMiXSwic291cmNlc0NvbnRlbnQiOlsidmFyIHJvb3QgPSByZXF1aXJlKCcuL19yb290Jyk7XG5cbi8qKiBVc2VkIHRvIGRldGVjdCBvdmVycmVhY2hpbmcgY29yZS1qcyBzaGltcy4gKi9cbnZhciBjb3JlSnNEYXRhID0gcm9vdFsnX19jb3JlLWpzX3NoYXJlZF9fJ107XG5cbm1vZHVsZS5leHBvcnRzID0gY29yZUpzRGF0YTtcbiJdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsSUFBSUEsSUFBSSxHQUFHQyxPQUFPLENBQUMsU0FBUyxDQUFDOztBQUU3QjtBQUNBLElBQUlDLFVBQVUsR0FBR0YsSUFBSSxDQUFDLG9CQUFvQixDQUFDO0FBRTNDRyxNQUFNLENBQUNDLE9BQU8sR0FBR0YsVUFBVSJ9

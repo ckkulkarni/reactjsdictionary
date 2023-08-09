@@ -1,0 +1,36 @@
+a02a08c71ca4365a861fd8898c114e52
+/* istanbul ignore next */
+"use strict";
+
+var isObject = require('./isObject'),
+  isPrototype = require('./_isPrototype'),
+  nativeKeysIn = require('./_nativeKeysIn');
+
+/** Used for built-in method references. */
+var objectProto = Object.prototype;
+
+/** Used to check objects for own properties. */
+var hasOwnProperty = objectProto.hasOwnProperty;
+
+/**
+ * The base implementation of `_.keysIn` which doesn't treat sparse arrays as dense.
+ *
+ * @private
+ * @param {Object} object The object to query.
+ * @returns {Array} Returns the array of property names.
+ */
+function baseKeysIn(object) {
+  if (!isObject(object)) {
+    return nativeKeysIn(object);
+  }
+  var isProto = isPrototype(object),
+    result = [];
+  for (var key in object) {
+    if (!(key == 'constructor' && (isProto || !hasOwnProperty.call(object, key)))) {
+      result.push(key);
+    }
+  }
+  return result;
+}
+module.exports = baseKeysIn;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJpc09iamVjdCIsInJlcXVpcmUiLCJpc1Byb3RvdHlwZSIsIm5hdGl2ZUtleXNJbiIsIm9iamVjdFByb3RvIiwiT2JqZWN0IiwicHJvdG90eXBlIiwiaGFzT3duUHJvcGVydHkiLCJiYXNlS2V5c0luIiwib2JqZWN0IiwiaXNQcm90byIsInJlc3VsdCIsImtleSIsImNhbGwiLCJwdXNoIiwibW9kdWxlIiwiZXhwb3J0cyJdLCJzb3VyY2VzIjpbIl9iYXNlS2V5c0luLmpzIl0sInNvdXJjZXNDb250ZW50IjpbInZhciBpc09iamVjdCA9IHJlcXVpcmUoJy4vaXNPYmplY3QnKSxcbiAgICBpc1Byb3RvdHlwZSA9IHJlcXVpcmUoJy4vX2lzUHJvdG90eXBlJyksXG4gICAgbmF0aXZlS2V5c0luID0gcmVxdWlyZSgnLi9fbmF0aXZlS2V5c0luJyk7XG5cbi8qKiBVc2VkIGZvciBidWlsdC1pbiBtZXRob2QgcmVmZXJlbmNlcy4gKi9cbnZhciBvYmplY3RQcm90byA9IE9iamVjdC5wcm90b3R5cGU7XG5cbi8qKiBVc2VkIHRvIGNoZWNrIG9iamVjdHMgZm9yIG93biBwcm9wZXJ0aWVzLiAqL1xudmFyIGhhc093blByb3BlcnR5ID0gb2JqZWN0UHJvdG8uaGFzT3duUHJvcGVydHk7XG5cbi8qKlxuICogVGhlIGJhc2UgaW1wbGVtZW50YXRpb24gb2YgYF8ua2V5c0luYCB3aGljaCBkb2Vzbid0IHRyZWF0IHNwYXJzZSBhcnJheXMgYXMgZGVuc2UuXG4gKlxuICogQHByaXZhdGVcbiAqIEBwYXJhbSB7T2JqZWN0fSBvYmplY3QgVGhlIG9iamVjdCB0byBxdWVyeS5cbiAqIEByZXR1cm5zIHtBcnJheX0gUmV0dXJucyB0aGUgYXJyYXkgb2YgcHJvcGVydHkgbmFtZXMuXG4gKi9cbmZ1bmN0aW9uIGJhc2VLZXlzSW4ob2JqZWN0KSB7XG4gIGlmICghaXNPYmplY3Qob2JqZWN0KSkge1xuICAgIHJldHVybiBuYXRpdmVLZXlzSW4ob2JqZWN0KTtcbiAgfVxuICB2YXIgaXNQcm90byA9IGlzUHJvdG90eXBlKG9iamVjdCksXG4gICAgICByZXN1bHQgPSBbXTtcblxuICBmb3IgKHZhciBrZXkgaW4gb2JqZWN0KSB7XG4gICAgaWYgKCEoa2V5ID09ICdjb25zdHJ1Y3RvcicgJiYgKGlzUHJvdG8gfHwgIWhhc093blByb3BlcnR5LmNhbGwob2JqZWN0LCBrZXkpKSkpIHtcbiAgICAgIHJlc3VsdC5wdXNoKGtleSk7XG4gICAgfVxuICB9XG4gIHJldHVybiByZXN1bHQ7XG59XG5cbm1vZHVsZS5leHBvcnRzID0gYmFzZUtleXNJbjtcbiJdLCJtYXBwaW5ncyI6Ijs7O0FBQUEsSUFBSUEsUUFBUSxHQUFHQyxPQUFPLENBQUMsWUFBWSxDQUFDO0VBQ2hDQyxXQUFXLEdBQUdELE9BQU8sQ0FBQyxnQkFBZ0IsQ0FBQztFQUN2Q0UsWUFBWSxHQUFHRixPQUFPLENBQUMsaUJBQWlCLENBQUM7O0FBRTdDO0FBQ0EsSUFBSUcsV0FBVyxHQUFHQyxNQUFNLENBQUNDLFNBQVM7O0FBRWxDO0FBQ0EsSUFBSUMsY0FBYyxHQUFHSCxXQUFXLENBQUNHLGNBQWM7O0FBRS9DO0FBQ0E7QUFDQTtBQUNBO0FBQ0E7QUFDQTtBQUNBO0FBQ0EsU0FBU0MsVUFBVUEsQ0FBQ0MsTUFBTSxFQUFFO0VBQzFCLElBQUksQ0FBQ1QsUUFBUSxDQUFDUyxNQUFNLENBQUMsRUFBRTtJQUNyQixPQUFPTixZQUFZLENBQUNNLE1BQU0sQ0FBQztFQUM3QjtFQUNBLElBQUlDLE9BQU8sR0FBR1IsV0FBVyxDQUFDTyxNQUFNLENBQUM7SUFDN0JFLE1BQU0sR0FBRyxFQUFFO0VBRWYsS0FBSyxJQUFJQyxHQUFHLElBQUlILE1BQU0sRUFBRTtJQUN0QixJQUFJLEVBQUVHLEdBQUcsSUFBSSxhQUFhLEtBQUtGLE9BQU8sSUFBSSxDQUFDSCxjQUFjLENBQUNNLElBQUksQ0FBQ0osTUFBTSxFQUFFRyxHQUFHLENBQUMsQ0FBQyxDQUFDLEVBQUU7TUFDN0VELE1BQU0sQ0FBQ0csSUFBSSxDQUFDRixHQUFHLENBQUM7SUFDbEI7RUFDRjtFQUNBLE9BQU9ELE1BQU07QUFDZjtBQUVBSSxNQUFNLENBQUNDLE9BQU8sR0FBR1IsVUFBVSJ9

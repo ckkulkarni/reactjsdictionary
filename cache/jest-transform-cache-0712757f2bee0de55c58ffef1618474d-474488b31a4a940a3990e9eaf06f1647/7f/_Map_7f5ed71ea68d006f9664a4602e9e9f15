@@ -1,0 +1,11 @@
+56da16e0fd2e27c6e65747502d52b5ab
+/* istanbul ignore next */
+"use strict";
+
+var getNative = require('./_getNative'),
+  root = require('./_root');
+
+/* Built-in method references that are verified to be native. */
+var Map = getNative(root, 'Map');
+module.exports = Map;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJuYW1lcyI6WyJnZXROYXRpdmUiLCJyZXF1aXJlIiwicm9vdCIsIk1hcCIsIm1vZHVsZSIsImV4cG9ydHMiXSwic291cmNlcyI6WyJfTWFwLmpzIl0sInNvdXJjZXNDb250ZW50IjpbInZhciBnZXROYXRpdmUgPSByZXF1aXJlKCcuL19nZXROYXRpdmUnKSxcbiAgICByb290ID0gcmVxdWlyZSgnLi9fcm9vdCcpO1xuXG4vKiBCdWlsdC1pbiBtZXRob2QgcmVmZXJlbmNlcyB0aGF0IGFyZSB2ZXJpZmllZCB0byBiZSBuYXRpdmUuICovXG52YXIgTWFwID0gZ2V0TmF0aXZlKHJvb3QsICdNYXAnKTtcblxubW9kdWxlLmV4cG9ydHMgPSBNYXA7XG4iXSwibWFwcGluZ3MiOiI7OztBQUFBLElBQUlBLFNBQVMsR0FBR0MsT0FBTyxDQUFDLGNBQWMsQ0FBQztFQUNuQ0MsSUFBSSxHQUFHRCxPQUFPLENBQUMsU0FBUyxDQUFDOztBQUU3QjtBQUNBLElBQUlFLEdBQUcsR0FBR0gsU0FBUyxDQUFDRSxJQUFJLEVBQUUsS0FBSyxDQUFDO0FBRWhDRSxNQUFNLENBQUNDLE9BQU8sR0FBR0YsR0FBRyJ9
